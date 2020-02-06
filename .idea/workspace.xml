@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b7f6938d-90fc-4750-b2f5-0726c66414cb" name="Default Changelist" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/react-pasv-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/content/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/content/content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/content/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logo/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logo/logo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logo/logo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logo/react-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1XQL9Z5JuzMlPn1YOpIPlcCq9rA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7f6938d-90fc-4750-b2f5-0726c66414cb" name="Default Changelist" comment="" />
+      <created>1580974658739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580974658739</updated>
+      <workItem from="1580974660574" duration="165000" />
+      <workItem from="1580974854191" duration="661000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1580975558530">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689/462.1080.1000.504@0.0.1280.689" timestamp="1580975558530" />
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1580974882819">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/462.1080.1000.504@0.0.1280.689" timestamp="1580974882819" />
+  </component>
+</project>
