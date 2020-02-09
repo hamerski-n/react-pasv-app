@@ -5,3 +5,9 @@ footer{
     border-style: solid;
     color: powderblue;
 }
+.flex{
+    display: flex;
+}
+footer div>div{
+    margin-right: 30px;
+}

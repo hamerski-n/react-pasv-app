@@ -3,13 +3,11 @@ import MenuItem from "../menu-item";
 
 import './menu.css';
 
-function Menu() {
+function Menu(props) {
     return (
         <nav>
             <ul className='menu'>
-                <MenuItem lable = 'MenuItem1'/>
-                <MenuItem lable = 'MenuItem2'/>
-                <MenuItem lable = 'MenuItem3'/>
+                {props.menuItems.map(el => <MenuItem key={el.text} menuItem = {el} />)}
             </ul>
         </nav>
     );

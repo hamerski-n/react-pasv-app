@@ -4,12 +4,12 @@ import Menu from "../menu";
 
 import './header.css';
 
-function Header() {
+function Header(props) {
     return (
         <header>
             <div className="container">
                 <Logo/>
-                <Menu/>
+                <Menu className='flex' menuItems = {props.menuItems}/>
             </div>
         </header>
     );

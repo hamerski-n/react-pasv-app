@@ -5,9 +5,10 @@ header{
     border-style: solid;
     color: powderblue;
 }
-header a {
-    color: white;
-}
 header nav {
     display: inline-block;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
 }

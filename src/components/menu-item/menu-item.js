@@ -1,10 +1,11 @@
 import React from "react";
 import './menu-item.css';
 
-function MenuItem ({lable='MenuItem'}) {
+function MenuItem (props) {
+    console.log(props);
     return (
         <li>
-            <a href='#top' className='menu-item'> {lable} </a>
+            <a href= {props.menuItem.link} className='menu-item'> {props.menuItem.text} </a>
         </li>
     );
 }
