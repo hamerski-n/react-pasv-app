@@ -1,16 +1,18 @@
 import React from "react";
-
 import './content.css';
-function clickButtonHandler(value) {
-    console.log('Clicked!' + value)
-}
 
-function inputHandler(e) {
-    //let name = e.target.value;
-    console.log(e.target.value)
-}
+function Content({bc}) {
+    let name = 'Initial';
+    
+    const clickButtonHandler = () => {
+        bc(name);
+        console.log('Clicked!' + name)
+    };
+    const inputHandler = (e) => {
+        name = e.target.value;
+        //console.log(e.target.value)
+    };
 
-function Content() {
     return (
         <main>
             <div className="container">
