@@ -3,7 +3,7 @@ import './content.css';
 
 function Content({bc}) {
     let name = 'Initial';
-    
+
     const clickButtonHandler = () => {
         bc(name);
         console.log('Clicked!' + name)

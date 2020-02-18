@@ -1,3 +1,3 @@
-import State from "./counter";
+import Counter from "./counter";
 
-export default State;
+export default Counter;
