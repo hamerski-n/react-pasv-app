@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
 import Header from "../header";
-import Content from "../content";
 import Footer from "../footer";
 import Counter from "../counter";
 import './app.css';
-import CounterAdd from "../counter-add";
-import CounterTotal from "../counter-total";
+import AddCounterForm from "../add-counter-form";
 
 const items = [{
     text: 'Home',
@@ -21,6 +19,7 @@ const items = [{
     link: 'prices-page'
 },
 ];
+
 const items2 = [{
     text: 'Menu item1',
     link: 'home'
@@ -32,67 +31,97 @@ const items2 = [{
     link: 'home'
 },
 ];
-const countersData = [
+const initialCountersState = [
     {
-        counterName: 'Counter1',
-        initialValue: 0,
-        id: 98
+        id: 98,
+        name: 'Counter 1',
+        count: 1
     },
     {
-        counterName: 'Counter2',
-        initialValue: 1,
-        id: 99
+        id: 99,
+        name: 'Counter 2',
+        count: 2
     }
 ];
 
 function App() {
+    const [counters, setCounters] = useState(initialCountersState);
+    const [maxId, setMaxId] = useState(100);
 
-    ////////////////////////////////////////////////////////////////
-    //next function addItem (counter)
-    ///////////////////////////////////////////////////////////////////
-    // const [counters, setCounters] = useState(countersData);
-    // const [idx, setIdx] = useState(100);
-    const [totalCount, setTotalCount] = useState(countersData[0].initialValue + countersData[1].initialValue);
-    const [isReset, setReset] = useState(false);
-
-    function countChanges(value) {
-        setTotalCount(value + totalCount);
-    }
-    function resetTotalCount(value) {
-        if (value){
-            setReset(true);
-        }
+    function createCounter(name, count) {
+        setMaxId(maxId + 1);
+        return {name, count, id: maxId};
     }
 
-    function buttonClicked(name) {
-        console.log('CLICKED!' + name)
-    }
+    const resetTotalCounter = () => {
+        const newCounters = counters.map(el => ({...el, count: 0}));
+        setCounters(newCounters);
+    };
 
-    function changeReset() {
-        setReset(false);
-    }
+    const incrementCounter = (id) => {
+        const index = counters.findIndex(el => el.id === id);
+        const newCounters = [...counters];
+        newCounters[index].count = newCounters[index].count + 1;
+        setCounters(newCounters);
+    };
+
+    const decrementCounter = (id) => {
+        const newCounters = counters.map(el => {
+            if (el.id === id) return {...el, count: el.count - 1};
+            return el;
+        });
+        setCounters(newCounters);
+    };
+
+    const resetCounter = (id) => {
+        const newCounters = counters.map(el => {
+            if (el.id === id) return {...el, count: 0};
+            return el;
+        });
+        setCounters(newCounters);
+    };
+
+    const removeCounter = (id) => {
+        const newCounters = counters.filter(el => el.id !== id);
+        setCounters(newCounters);
+    };
+
+    const addCounter = (name, count) => {
+        const newCounter = createCounter(name, count);
+        const newCounters = [...counters, newCounter];
+        setCounters(newCounters);
+    };
+
+    // function buttonClicked(name) {
+    //     console.log('CLICKED!' + name)
+    // }
 
     return (
         <div className="App">
             <Header menuItems={items}/>
-            <Content bc={buttonClicked}/>
-            <CounterTotal totalCount = {totalCount} setTotalCount={setTotalCount} resetTotalCount={resetTotalCount}/>
-            <p>Counters</p>
+            {/*<Content bc={buttonClicked}/>*/}
+            <br/>
+            Total count {counters.reduce((acc, cur) => acc + cur.count, 0)}
+            <button className='gray' onClick={resetTotalCounter}> Reset total count</button>
+            <br/>
+            <p>Counters </p>
             <hr/>
-            <Counter counterName={countersData[0].counterName}
-                     countChanges={countChanges}
-                     initialValue={countersData[0].initialValue}
-                     isReset={isReset}
-                     changeReset={changeReset}
-            />
-            <Counter counterName={countersData[1].counterName}
-                     countChanges={countChanges}
-                     initialValue={countersData[1].initialValue}
-                     isReset={isReset}
-                     changeReset={changeReset}
-            />
+            {
+                counters.map(el => <Counter key={el.id}
+                                            id={el.id}
+                                            name={el.name}
+                                            count={el.count}
+                                            increment={incrementCounter}
+                                            decrement={decrementCounter}
+                                            remove={removeCounter}
+                                            reset={resetCounter}
+                />)
+            }
+            <br/>
             <p>Add new counter</p>
-            <CounterAdd/>
+            <AddCounterForm onSubmit={addCounter}/>
+            <br/>
+
             <Footer menuItems={items} menuItems2={items2}/>
         </div>
     );

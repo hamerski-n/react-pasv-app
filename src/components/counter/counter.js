@@ -1,38 +1,16 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import './counter.css';
 
-function Counter({countChanges, counterName, initialValue, isReset,changeReset}) {
-    const [count, setCount] = useState(initialValue);
-
-    const countChangePlusHandler = () => {
-        setCount(count + 1);
-        countChanges(1);
-    };
-
-    const countChangeMinusHandler = () => {
-        setCount(count - 1);
-        countChanges(-1);
-    };
-    const resetCounter = () => {
-        setCount(0);
-        countChanges(-count);
-    };
-
-    useEffect(function resetAllCounters() {
-        if (isReset) {
-            setCount(0);
-            changeReset();
-        }
-    });
+function Counter(props) {
 
     return (
         <div>
-            {counterName}
-            <button onClick={countChangeMinusHandler}> -</button>
-            {count}
-            <button onClick={countChangePlusHandler}> +</button>
-            <button className='gray' onClick={resetCounter}> Reset {counterName} </button>
-            <button className='gray' onClick={countChangePlusHandler}> Delete</button>
+            {props.name}
+            <button onClick={() => props.decrement(props.id)}> -</button>
+            {props.count}
+            <button onClick={() => props.increment(props.id)}> +</button>
+            <button className='gray' onClick={() => props.reset(props.id)}> Reset {props.name} </button>
+            <button className='gray' onClick={() => props.remove(props.id)}> Delete</button>
             <hr/>
         </div>
     );
