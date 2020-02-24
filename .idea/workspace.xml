@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7f6938d-90fc-4750-b2f5-0726c66414cb" name="Default Changelist" comment="Delete confirmation modal">
-      <change afterPath="$PROJECT_DIR$/src/components/delete-confirmation-modal/DeleteConfirmationModal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/delete-confirmation-modal/DeleteConfirmationModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/delete-confirmation-modal/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/total-count/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/total-count/total-count.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/total-count/total-count.js" afterDir="false" />
+    <list default="true" id="b7f6938d-90fc-4750-b2f5-0726c66414cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add-counter-form/add-counter-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-counter-form/add-counter-form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/counter/counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counter/counter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/counter/counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counter/counter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +99,7 @@
       <workItem from="1582502550352" duration="1298000" />
       <workItem from="1582503866290" duration="1140000" />
       <workItem from="1582505023312" duration="324000" />
-      <workItem from="1582523810069" duration="16539000" />
+      <workItem from="1582523810069" duration="16932000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1580975608248</created>
@@ -149,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582261155526</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Delete confirmation modal">
+      <created>1582540369667</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582540369667</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,10 +163,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="371" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1581788450139" />
-    <state x="-6" y="0" width="1259" height="689" key="CommitChangelistDialog2" timestamp="1582539699908">
+    <state x="-6" y="0" width="1259" height="689" key="CommitChangelistDialog2" timestamp="1582540368652">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="-6" y="0" width="1259" height="689" key="CommitChangelistDialog2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582539699908" />
+    <state x="-6" y="0" width="1259" height="689" key="CommitChangelistDialog2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582540368652" />
     <state x="-6" y="0" key="CommitChangelistDialog2/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582261154677" />
     <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689/462.1080.1000.504@0.0.1280.689" timestamp="1580975607408" />
     <state x="93" y="93" width="1095" height="504" key="DiffContextDialog" timestamp="1581216522361">
@@ -212,10 +206,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="416" y="57" key="RollbackChangesDialog/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582261036062" />
-    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1582392345786">
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1582540797238">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582392345786" />
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582540797238" />
     <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582261168390" />
     <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/462.1080.1000.504@0.0.1280.689" timestamp="1580975789189" />
     <state x="387" y="80" key="VcsDiffUtil.ChangesDialog" timestamp="1581216513499">
