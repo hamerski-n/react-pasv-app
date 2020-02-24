@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
+import './app.css';
 import Header from "../header";
 import Footer from "../footer";
 import Counter from "../counter";
-import './app.css';
 import AddCounterForm from "../add-counter-form";
+import TotalCount from "../total-count";
 
 const items = [{
     text: 'Home',
@@ -92,20 +93,13 @@ function App() {
         setCounters(newCounters);
     };
 
-    // function buttonClicked(name) {
-    //     console.log('CLICKED!' + name)
-    // }
-
     return (
-        <div className="App">
+        <div>
             <Header menuItems={items}/>
-            {/*<Content bc={buttonClicked}/>*/}
             <br/>
-            Total count {counters.reduce((acc, cur) => acc + cur.count, 0)}
-            <button className='gray' onClick={resetTotalCounter}> Reset total count</button>
+            <TotalCount counters={counters} resetTotalCounter={resetTotalCounter}/>
             <br/>
-            <p>Counters </p>
-            <hr/>
+            <p className="font-weight-bold">Counters</p>
             {
                 counters.map(el => <Counter key={el.id}
                                             id={el.id}
@@ -117,8 +111,9 @@ function App() {
                                             reset={resetCounter}
                 />)
             }
-            <br/>
-            <p>Add new counter</p>
+
+            <div className="font-weight-bold"> Add new counter</div>
+
             <AddCounterForm onSubmit={addCounter}/>
             <br/>
 
