@@ -93,6 +93,15 @@ function App() {
         setCounters(newCounters);
     };
 
+    const editCounterName = (name,id) => {
+        console.log('name in APP='+name);
+        const newCounters = counters.map(el => {
+            if (el.id === id) return {...el, name: name};
+            return el;
+        });
+        setCounters(newCounters);
+    };
+
     return (
         <div>
             <Header menuItems={items}/>
@@ -109,6 +118,7 @@ function App() {
                                             decrement={decrementCounter}
                                             remove={removeCounter}
                                             reset={resetCounter}
+                                            editCounterName={editCounterName}
                 />)
             }
 
