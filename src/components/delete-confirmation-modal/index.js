@@ -1,3 +1,3 @@
-import DeleteConfirmationModal from "./DeleteConfirmationModal";
+import ConfirmationDelete from "./confirmation-delete";
 
-export default DeleteConfirmationModal;
+export default ConfirmationDelete;

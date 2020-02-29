@@ -5,6 +5,7 @@ import Footer from "../footer";
 import Counter from "../counter";
 import AddCounterForm from "../add-counter-form";
 import TotalCount from "../total-count";
+import ConfirmationDelete from "../delete-confirmation-modal";
 
 const items = [{
     text: 'Home',
@@ -48,6 +49,7 @@ const initialCountersState = [
 function App() {
     const [counters, setCounters] = useState(initialCountersState);
     const [maxId, setMaxId] = useState(100);
+    const [confirmCounter, setConfirmCounter] = useState({});
 
     function createCounter(name, count) {
         setMaxId(maxId + 1);
@@ -82,24 +84,33 @@ function App() {
         setCounters(newCounters);
     };
 
-    const removeCounter = (id) => {
-        const newCounters = counters.filter(el => el.id !== id);
-        setCounters(newCounters);
-    };
-
     const addCounter = (name, count) => {
         const newCounter = createCounter(name, count);
         const newCounters = [...counters, newCounter];
         setCounters(newCounters);
     };
 
-    const editCounterName = (name,id) => {
-        console.log('name in APP='+name);
+    const editCounterName = (name, id) => {
+        console.log('name in APP=' + name);
         const newCounters = counters.map(el => {
             if (el.id === id) return {...el, name: name};
             return el;
         });
         setCounters(newCounters);
+    };
+
+    const confirmRemove = (counter) => {
+        setConfirmCounter(counter);
+    };
+
+    const removeConfirmedCounter = () => {
+        const newCounters = counters.filter(el => el.id !== confirmCounter.id);
+        setCounters(newCounters);
+        setConfirmCounter({});
+    };
+
+    const confirmRemoveCancel = () => {
+        setConfirmCounter({});
     };
 
     return (
@@ -111,12 +122,10 @@ function App() {
             <p className="font-weight-bold">Counters</p>
             {
                 counters.map(el => <Counter key={el.id}
-                                            id={el.id}
-                                            name={el.name}
-                                            count={el.count}
+                                            counter={el}
                                             increment={incrementCounter}
                                             decrement={decrementCounter}
-                                            remove={removeCounter}
+                                            remove={confirmRemove}
                                             reset={resetCounter}
                                             editCounterName={editCounterName}
                 />)
@@ -128,7 +137,14 @@ function App() {
             <br/>
 
             <Footer menuItems={items} menuItems2={items2}/>
+
+            <ConfirmationDelete
+                name={confirmCounter.name}
+                onSuccess={removeConfirmedCounter}
+                onCancel={confirmRemoveCancel}
+            />
         </div>
+
     );
 }
 

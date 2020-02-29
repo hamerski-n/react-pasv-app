@@ -6,9 +6,13 @@ function AddCounterForm(props) {
     const [count, setCount] = useState('');
 
     const onSubmit = () => {
-        props.onSubmit(name, Number(count));
-        setName('');
-        setCount('');
+        if (name === '') {
+            alert('Please add a counter name')
+        } else {
+            props.onSubmit(name, Number(count));
+            setName('');
+            setCount('');
+        }
     };
 
     return (

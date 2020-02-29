@@ -1,15 +1,17 @@
 import React, {useState} from "react";
 import './counter.css';
-import DeleteConfirmationModal from "../delete-confirmation-modal";
 
 function Counter(props) {
-    const [name, setName] = useState(props.name);
+
+    const {counter, increment, decrement, remove, reset, editCounterName} = props;
+
+    const [name, setName] = useState(counter.name);
     const [readOnly, setReadOnly] = useState(true);
 
-    console.log('Counter beginning name'+ name);
+    console.log('Counter beginning name' + name);
 
     const onEditing = (name) => {
-        props.editCounterName(name, props.id);
+        editCounterName(name, counter.id);
         setName(name);
     };
 
@@ -23,35 +25,35 @@ function Counter(props) {
         <div className='card mb-2'>
             <div className='card-body'>
                 <div className='row align-items-center'>
-                    <input className='col- border-0' value={props.name} readOnly={readOnly}
+                    <input className='col- border-0' value={counter.name} readOnly={readOnly}
                            onChange={e => onEditing(e.target.value)}/>
 
                     <div className='col-'>
-                        <button className='btn btn-outline-secondary' onClick={() => props.decrement(props.id)}> -
+                        <button className='btn btn-outline-secondary' onClick={() => decrement(counter.id)}> -
                         </button>
                     </div>
                     <div className='col-'>
-                        {props.count}
+                        {counter.count}
                     </div>
                     <div className='col-'>
-                        <button className='btn btn-outline-secondary' onClick={() => props.increment(props.id)}> +
+                        <button className='btn btn-outline-secondary' onClick={() => increment(counter.id)}> +
                         </button>
                     </div>
                     <div className='col-'>
                         <button className='btn btn-secondary'
-                                onClick={() => props.reset(props.id)}> Reset {props.name} </button>
+                                onClick={() => reset(counter.id)}> Reset {counter.name} </button>
                     </div>
                     <div className='col-'>
                         <button className='btn btn-secondary'
-                                onClick={isEditable}> Edit counter name
+                                onClick={isEditable}
+                        > Edit counter name
                         </button>
                     </div>
                     <div className='col-'>
-                        < DeleteConfirmationModal
-                            remove={props.remove}
-                            id={props.id}
-                            name={props.name}
-                        />
+                        <button className='btn btn-danger'
+                                onClick={() => remove(counter)}
+                        > Delete
+                        </button>
                     </div>
                 </div>
             </div>

@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b7f6938d-90fc-4750-b2f5-0726c66414cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/add-counter-form/add-counter-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-counter-form/add-counter-form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/counter/counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counter/counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/delete-confirmation-modal/DeleteConfirmationModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/delete-confirmation-modal/confirmation-delete.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/delete-confirmation-modal/DeleteConfirmationModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/delete-confirmation-modal/confirmation-delete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/delete-confirmation-modal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/delete-confirmation-modal/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -44,7 +50,7 @@
       <recent name="C:\Users\Natalie\Desktop\PASV\react-pasv-app\src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.start">
     <configuration name="katas.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../codewards/katas.js" working-dir="$PROJECT_DIR$/../codewards">
       <method v="2" />
     </configuration>
@@ -80,9 +86,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.predeploy" />
-        <item itemvalue="npm.start" />
         <item itemvalue="Node.js.katas.js" />
       </list>
     </recent_temporary>
@@ -112,7 +118,8 @@
       <workItem from="1582502550352" duration="1298000" />
       <workItem from="1582503866290" duration="1140000" />
       <workItem from="1582505023312" duration="324000" />
-      <workItem from="1582523810069" duration="25961000" />
+      <workItem from="1582523810069" duration="34443000" />
+      <workItem from="1582849846875" duration="11677000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1580975608248</created>
@@ -163,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582540808461</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Edit counter name added">
+      <created>1582592270375</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582592270375</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,61 +190,62 @@
     <MESSAGE value="Reset added" />
     <MESSAGE value="Props and useState. &#10;Add counters." />
     <MESSAGE value="Delete confirmation modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete confirmation modal" />
+    <MESSAGE value="Edit counter name added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit counter name added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581788450139">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="371" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1581788450139" />
-    <state x="-6" y="0" width="1259" height="689" key="CommitChangelistDialog2" timestamp="1582540807977">
+    <state x="-6" y="0" width="1259" height="689" key="CommitChangelistDialog2" timestamp="1582954873658">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="-6" y="0" width="1259" height="689" key="CommitChangelistDialog2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582540807977" />
-    <state x="-6" y="0" key="CommitChangelistDialog2/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582261154677" />
+    <state x="-6" y="0" width="1259" height="689" key="CommitChangelistDialog2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582954873658" />
+    <state x="-6" y="0" key="CommitChangelistDialog2/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582592269810" />
     <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689/462.1080.1000.504@0.0.1280.689" timestamp="1580975607408" />
     <state x="93" y="93" width="1095" height="504" key="DiffContextDialog" timestamp="1581216522361">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="93" y="93" width="1095" height="504" key="DiffContextDialog/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1581216522361" />
-    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1582438744182">
+    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1582594343829">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582438744182" />
-    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582263408287" />
-    <state width="1259" height="187" key="GridCell.Tab.0.bottom" timestamp="1582541076857">
+    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582594343829" />
+    <state width="1259" height="148" key="GridCell.Tab.0.bottom" timestamp="1582953952161">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1259" height="187" key="GridCell.Tab.0.bottom/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582541076857" />
-    <state width="1259" height="65" key="GridCell.Tab.0.bottom/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582263362882" />
+    <state width="1259" height="148" key="GridCell.Tab.0.bottom/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582953952161" />
+    <state width="1259" height="148" key="GridCell.Tab.0.bottom/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582925419337" />
     <state width="1259" height="195" key="GridCell.Tab.0.bottom/0.0.1280.720/460.1080.1000.504@0.0.1280.720" timestamp="1581986676439" />
-    <state width="1259" height="187" key="GridCell.Tab.0.center" timestamp="1582541076857">
+    <state width="1259" height="148" key="GridCell.Tab.0.center" timestamp="1582953952160">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1259" height="187" key="GridCell.Tab.0.center/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582541076857" />
-    <state width="1259" height="65" key="GridCell.Tab.0.center/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582263362882" />
+    <state width="1259" height="148" key="GridCell.Tab.0.center/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582953952160" />
+    <state width="1259" height="148" key="GridCell.Tab.0.center/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582925419337" />
     <state width="1259" height="195" key="GridCell.Tab.0.center/0.0.1280.720/460.1080.1000.504@0.0.1280.720" timestamp="1581986676439" />
-    <state width="1259" height="187" key="GridCell.Tab.0.left" timestamp="1582541076856">
+    <state width="1259" height="148" key="GridCell.Tab.0.left" timestamp="1582953952160">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1259" height="187" key="GridCell.Tab.0.left/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582541076856" />
-    <state width="1259" height="65" key="GridCell.Tab.0.left/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582263362882" />
+    <state width="1259" height="148" key="GridCell.Tab.0.left/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582953952160" />
+    <state width="1259" height="148" key="GridCell.Tab.0.left/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582925419337" />
     <state width="1259" height="195" key="GridCell.Tab.0.left/0.0.1280.720/460.1080.1000.504@0.0.1280.720" timestamp="1581986676439" />
-    <state width="1259" height="187" key="GridCell.Tab.0.right" timestamp="1582541076857">
+    <state width="1259" height="148" key="GridCell.Tab.0.right" timestamp="1582953952160">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1259" height="187" key="GridCell.Tab.0.right/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582541076857" />
-    <state width="1259" height="65" key="GridCell.Tab.0.right/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582263362882" />
+    <state width="1259" height="148" key="GridCell.Tab.0.right/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582953952160" />
+    <state width="1259" height="148" key="GridCell.Tab.0.right/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582925419337" />
     <state width="1259" height="195" key="GridCell.Tab.0.right/0.0.1280.720/460.1080.1000.504@0.0.1280.720" timestamp="1581986676439" />
     <state x="416" y="57" key="RollbackChangesDialog" timestamp="1582261036062">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="416" y="57" key="RollbackChangesDialog/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582261036062" />
-    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1582541050899">
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1582592370832">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1582541050899" />
-    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582261168390" />
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/461.1080.1000.504@0.0.1280.689" timestamp="1582592370832" />
     <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/462.1080.1000.504@0.0.1280.689" timestamp="1580975789189" />
     <state x="387" y="80" key="VcsDiffUtil.ChangesDialog" timestamp="1581216513499">
       <screen x="0" y="0" width="1280" height="689" />
