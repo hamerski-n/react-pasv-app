@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react-pasv-app/static/css/main.d3b23e73.chunk.css",
-    "main.js": "/react-pasv-app/static/js/main.9ed50e4a.chunk.js",
-    "main.js.map": "/react-pasv-app/static/js/main.9ed50e4a.chunk.js.map",
-    "runtime-main.js": "/react-pasv-app/static/js/runtime-main.ae68b153.js",
-    "runtime-main.js.map": "/react-pasv-app/static/js/runtime-main.ae68b153.js.map",
-    "static/css/2.25d2dfdd.chunk.css": "/react-pasv-app/static/css/2.25d2dfdd.chunk.css",
-    "static/js/2.929e2598.chunk.js": "/react-pasv-app/static/js/2.929e2598.chunk.js",
-    "static/js/2.929e2598.chunk.js.map": "/react-pasv-app/static/js/2.929e2598.chunk.js.map",
-    "index.html": "/react-pasv-app/index.html",
-    "precache-manifest.96a4337de853aea34c67ddf150f54b72.js": "/react-pasv-app/precache-manifest.96a4337de853aea34c67ddf150f54b72.js",
-    "service-worker.js": "/react-pasv-app/service-worker.js",
-    "static/css/2.25d2dfdd.chunk.css.map": "/react-pasv-app/static/css/2.25d2dfdd.chunk.css.map",
-    "static/css/main.d3b23e73.chunk.css.map": "/react-pasv-app/static/css/main.d3b23e73.chunk.css.map",
-    "static/js/2.929e2598.chunk.js.LICENSE.txt": "/react-pasv-app/static/js/2.929e2598.chunk.js.LICENSE.txt"
+    "main.css": "/react-pasv-counters-app/static/css/main.d3b23e73.chunk.css",
+    "main.js": "/react-pasv-counters-app/static/js/main.72c5f3fb.chunk.js",
+    "main.js.map": "/react-pasv-counters-app/static/js/main.72c5f3fb.chunk.js.map",
+    "runtime-main.js": "/react-pasv-counters-app/static/js/runtime-main.61d73005.js",
+    "runtime-main.js.map": "/react-pasv-counters-app/static/js/runtime-main.61d73005.js.map",
+    "static/css/2.25d2dfdd.chunk.css": "/react-pasv-counters-app/static/css/2.25d2dfdd.chunk.css",
+    "static/js/2.929e2598.chunk.js": "/react-pasv-counters-app/static/js/2.929e2598.chunk.js",
+    "static/js/2.929e2598.chunk.js.map": "/react-pasv-counters-app/static/js/2.929e2598.chunk.js.map",
+    "index.html": "/react-pasv-counters-app/index.html",
+    "precache-manifest.3f81a844035d0e443bb7f24a117fee88.js": "/react-pasv-counters-app/precache-manifest.3f81a844035d0e443bb7f24a117fee88.js",
+    "service-worker.js": "/react-pasv-counters-app/service-worker.js",
+    "static/css/2.25d2dfdd.chunk.css.map": "/react-pasv-counters-app/static/css/2.25d2dfdd.chunk.css.map",
+    "static/css/main.d3b23e73.chunk.css.map": "/react-pasv-counters-app/static/css/main.d3b23e73.chunk.css.map",
+    "static/js/2.929e2598.chunk.js.LICENSE.txt": "/react-pasv-counters-app/static/js/2.929e2598.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ae68b153.js",
+    "static/js/runtime-main.61d73005.js",
     "static/css/2.25d2dfdd.chunk.css",
     "static/js/2.929e2598.chunk.js",
     "static/css/main.d3b23e73.chunk.css",
-    "static/js/main.9ed50e4a.chunk.js"
+    "static/js/main.72c5f3fb.chunk.js"
   ]
 }
